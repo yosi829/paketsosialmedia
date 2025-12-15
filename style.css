@@ -1,0 +1,39 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+body { margin: 0; background: #f2f2f2; }
+
+/* LOGIN */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-box input { width: 100%; padding: 10px; margin: 10px 0; }
+.login-box button { width: 100%; padding: 10px; background: #667eea; border: none; color: white; cursor: pointer; }
+
+/* DASHBOARD */
+.dashboard-container { display: none; }
+header { background: #667eea; color: white; padding: 15px; display: flex; justify-content: space-between; }
+header button { background: #764ba2; border: none; color: white; padding: 8px 15px; cursor: pointer; }
+
+.upload { padding: 20px; background: white; margin: 20px; border-radius: 10px; }
+.upload input, .upload textarea, .upload select { width: 100%; margin: 10px 0; padding: 10px; }
+.upload button { background: #764ba2; color: white; border: none; padding: 10px; cursor: pointer; }
+
+.product-list { padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px; }
+.product-card { background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.2s; }
+.product-card:hover { transform: translateY(-5px); }
+.product-card img { width: 50px; margin-bottom: 10px; }
+.product-card h4 { color: #667eea; }
+.product-card p { font-size: 14px; color: #333; }
+.product-card strong { color: #764ba2; display: block; margin-top: 5px; }
